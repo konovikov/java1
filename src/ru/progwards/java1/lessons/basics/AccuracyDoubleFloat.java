@@ -27,7 +27,4 @@ public class AccuracyDoubleFloat {
         System.out.println(volumeBallFloat((float)R));
         System.out.println(calculateAccuracy(R));
     }
-
-
-    //которая будет возвращать разницу между функциями volumeBallDouble и volumeBallFloat (они должны быть вызваны из неё с параметром radius).
 }
