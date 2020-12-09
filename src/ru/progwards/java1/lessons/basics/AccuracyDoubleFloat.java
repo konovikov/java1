@@ -17,6 +17,7 @@ public class AccuracyDoubleFloat {
     }
 
     public static void main(String[] args) {
+        double R = 6371.2;
         System.out.println(volumeBallDouble(R));
         System.out.println(volumeBallFloat((float)R));
         System.out.println(calculateAccuracy(R));
