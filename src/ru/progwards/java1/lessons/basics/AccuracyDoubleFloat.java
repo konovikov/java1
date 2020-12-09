@@ -8,14 +8,14 @@ public class AccuracyDoubleFloat {
     //Формула объёма шара 4/3πR3
 
     public static double volumeBallDouble(double radius){
-        double v1 = 4 / 3 * PI * radius * radius * radius;
+        double v1 = 4.0 / 3.0 * 3.14 * radius * radius * radius;
         return v1;
     }
 
 
     public static float volumeBallFloat(float radius){
-        float v2 = (float) (4 / 3 * PI * radius * radius * radius);
-        return v2;
+        float v2 = (float)(4.0 / 3.0 * 3.14 * radius * radius * radius);
+        return (float)v2;
     }
 
     public static double calculateAccuracy(double radius) {
