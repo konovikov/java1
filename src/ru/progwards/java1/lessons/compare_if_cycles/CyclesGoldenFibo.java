@@ -1,10 +1,10 @@
 package ru.progwards.java1.lessons.compare_if_cycles;
 
-import java.sql.SQLOutput;
-
 public class CyclesGoldenFibo {
 
     public static boolean containsDigit(int number, int digit){
+        if (number == 0 && digit == 0) // проверка нолей
+            return true;
         for (int i = 1; i <= number; i = i * 10) {
             int dig1 = number % (i*10)/i; //вычленяем цифры
             /*System.out.println(dig1); - тестовый вывод*/
@@ -53,7 +53,7 @@ public class CyclesGoldenFibo {
 
     public static void main(String[] args) {
 
-        System.out.println(containsDigit(123456789,9));//находим, содержится ли цифра
+        System.out.println(containsDigit(0,0));//находим, содержится ли цифра
 
         /*выводим первые 15 чисел ряда Фибоначи*/
         for (int i=1;i<=15;i++){
